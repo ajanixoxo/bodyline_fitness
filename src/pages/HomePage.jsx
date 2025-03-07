@@ -19,7 +19,7 @@ const HomePage = () => {
       duration: "60 min",
       capacity: "15",
       intensity: "High",
-      image: "/placeholder.svg?height=400&width=600",
+      image: "https://placehold.co/400x400",
       trainer: "John Smith",
     },
     {
@@ -28,7 +28,7 @@ const HomePage = () => {
       duration: "45 min",
       capacity: "20",
       intensity: "High",
-      image: "/placeholder.svg?height=400&width=600",
+      image: "https://placehold.co/400x400",
       trainer: "Emma Davis",
     },
     {
@@ -37,7 +37,7 @@ const HomePage = () => {
       duration: "75 min",
       capacity: "18",
       intensity: "Medium",
-      image: "/placeholder.svg?height=400&width=600",
+      image: "https://placehold.co/400x400",
       trainer: "Sarah Wilson",
     },
     // Add more classes as needed
@@ -48,7 +48,7 @@ const HomePage = () => {
     {
       name: "John Smith",
       specialty: "Strength & Conditioning",
-      image: "/placeholder.svg?height=600&width=400",
+      image: "https://placehold.co/400x400",
       bio: "Certified strength coach with 10+ years of experience.",
       socialLinks: {
         facebook: "#",
@@ -59,7 +59,7 @@ const HomePage = () => {
     {
       name: "Emma Davis",
       specialty: "Cardio & HIIT",
-      image: "/placeholder.svg?height=600&width=400",
+      image: "https://placehold.co/400x400",
       bio: "Former athlete turned fitness instructor. Specializes in high-intensity workouts.",
       socialLinks: {
         facebook: "#",
@@ -70,7 +70,7 @@ const HomePage = () => {
     {
       name: "Sarah Wilson",
       specialty: "Yoga & Pilates",
-      image: "/placeholder.svg?height=600&width=400",
+      image: "https://placehold.co/400x400",
       bio: "Experienced yoga instructor with a focus on mindfulness and body awareness.",
       socialLinks: {
         facebook: "#",
@@ -223,7 +223,7 @@ const HomePage = () => {
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div data-aos="fade-right">
               <img
-                src="/placeholder.svg?height=600&width=600"
+                src="/about.jpg"
                 alt="Gym facilities"
                 className="rounded-lg shadow-lg w-full h-auto"
               />

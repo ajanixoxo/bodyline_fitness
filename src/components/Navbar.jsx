@@ -24,7 +24,7 @@ const Navbar = () => {
   return (
     <header
       className={`fixed w-full z-50 transition-all duration-300 ${
-        scrolled ? "nav-blur bg-white/80 shadow-md py-2" : "bg-transparent py-4"
+        scrolled ? "nav-blur bg-white/80 !text-black shadow-md py-2" : "bg-transparent py-4"
       }`}
     >
       <div className="container mx-auto px-4 md:px-6">
@@ -38,26 +38,26 @@ const Navbar = () => {
           </Link>
 
           {/* Desktop Navigation */}
-          <nav className="hidden md:flex space-x-8">
-            <Link to="/" className="text-gray-200 hover:text-green transition-colors">
+          <nav className={`hidden md:flex space-x-8 `}>
+            <Link to="/" className={`text-gray-200 hover:text-green transition-colors ${scrolled && '!text-black'}`}>
               Home
             </Link>
-            <a href="#about" className="text-gray-200 hover:text-green transition-colors">
+            <a href="#about" className={`text-gray-200 hover:text-green transition-colors ${scrolled && '!text-black'}`}>
               About
             </a>
-            <a href="#classes" className="text-gray-200 hover:text-green transition-colors">
+            <a href="#classes" className={`text-gray-200 hover:text-green transition-colors ${scrolled && '!text-black'}`}>
               Classes
             </a>
-            <a href="#trainers" className="text-gray-200 hover:text-green transition-colors">
+            <a href="#trainers" className={`text-gray-200 hover:text-green transition-colors ${scrolled && '!text-black'}`}>
               Trainers
             </a>
-            <a href="#membership" className="text-gray-200 hover:text-green transition-colors">
+            <a href="#membership" className={`text-gray-200 hover:text-green transition-colors ${scrolled && '!text-black'}`}>
               Membership
             </a>
-            <a href="#schedule" className="text-gray-200 hover:text-green transition-colors">
+            <a href="#schedule" className={`text-gray-200 hover:text-green transition-colors ${scrolled && '!text-black'}`}>
               Schedule
             </a>
-            <a href="#contact" className="text-gray-200 hover:text-green transition-colors">
+            <a href="#contact" className={`text-gray-200 hover:text-green transition-colors ${scrolled && '!text-black'}`}>
               Contact
             </a>
           </nav>
@@ -87,25 +87,25 @@ const Navbar = () => {
         }`}
       >
         <div className="container mx-auto px-4 py-4 flex flex-col space-y-4">
-          <Link to="/" className="text-gray-200 hover:text-green transition-colors">
+          <Link to="/" className={`text-gray-200 hover:text-green transition-colors ${scrolled && '!text-black'}`}>
             Home
           </Link>
-          <a href="#about" className="text-gray-200 hover:text-green transition-colors">
+          <a href="#about" className={`text-gray-200 hover:text-green transition-colors ${scrolled && '!text-black'}`}>
             About
           </a>
-          <a href="#classes" className="text-gray-200 hover:text-green transition-colors">
+          <a href="#classes" className={`text-gray-200 hover:text-green transition-colors ${scrolled && '!text-black'}`}>
             Classes
           </a>
-          <a href="#trainers" className="text-gray-200 hover:text-green transition-colors">
+          <a href="#trainers" className={`text-gray-200 hover:text-green transition-colors ${scrolled && '!text-black'}`}>
             Trainers
           </a>
-          <a href="#membership" className="text-gray-200 hover:text-green transition-colors">
+          <a href="#membership" className={`text-gray-200 hover:text-green transition-colors ${scrolled && '!text-black'}`}>
             Membership
           </a>
-          <a href="#schedule" className="text-gray-200 hover:text-green transition-colors">
+          <a href="#schedule" className={`text-gray-200 hover:text-green transition-colors ${scrolled && '!text-black'}`}>
             Schedule
           </a>
-          <a href="#contact" className="text-gray-200 hover:text-green transition-colors">
+          <a href="#contact" className={`text-gray-200 hover:text-green transition-colors ${scrolled && '!text-black'}`}>
             Contact
           </a>
           <a
