@@ -1,0 +1,138 @@
+@import url("https://fonts.googleapis.com/css2?family=Great+Vibes:wght@400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --primary-font: "Inter", sans-serif;
+  --script-font: "Great Vibes", cursive;
+  --color-navy: #1a237e;
+  --color-green: #4caf50;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--primary-font);
+  color: #1a1a1a;
+  background-color: #ffffff;
+}
+
+.script-font {
+  font-family: var(--script-font);
+}
+
+.nav-blur {
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+}
+
+.hero-gradient {
+  background: linear-gradient(to right, rgba(217, 218, 224, 0), rgba(76, 175, 79, 0));
+}
+
+.membership-card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.membership-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+}
+
+.trainer-card {
+  position: relative;
+  overflow: hidden;
+}
+
+.trainer-card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(to top, rgba(26, 35, 126, 0.8), transparent);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.trainer-card:hover::before {
+  opacity: 1;
+}
+
+.trainer-info {
+  position: absolute;
+  bottom: -100%;
+  left: 0;
+  right: 0;
+  padding: 1.5rem;
+  background: rgba(255, 255, 255, 0.9);
+  transition: bottom 0.3s ease;
+}
+
+.trainer-card:hover .trainer-info {
+  bottom: 0;
+}
+
+.schedule-table th,
+.schedule-table td {
+  border: 1px solid #e5e7eb;
+  padding: 1rem;
+}
+
+.schedule-table th {
+  background-color: var(--color-navy);
+  color: white;
+}
+
+.schedule-table td.class-slot {
+  background-color: rgba(76, 175, 80, 0.1);
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.schedule-table td.class-slot:hover {
+  background-color: rgba(76, 175, 80, 0.2);
+}
+
+.testimonial-card {
+  position: relative;
+}
+
+.testimonial-card::before {
+  content: '"';
+  font-family: var(--script-font);
+  font-size: 4rem;
+  position: absolute;
+  top: -1rem;
+  left: -1rem;
+  color: rgba(76, 175, 80, 0.2);
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  border-color: var(--color-navy);
+  ring-color: var(--color-navy);
+}
+
+@keyframes pulse-border {
+  0% {
+    box-shadow: 0 0 0 0 rgba(76, 175, 80, 0.4);
+  }
+  70% {
+    box-shadow: 0 0 0 10px rgba(76, 175, 80, 0);
+  }
+  100% {
+    box-shadow: 0 0 0 0 rgba(76, 175, 80, 0);
+  }
+}
+
+.animate-pulse-border {
+  animation: pulse-border 2s infinite;
+}
+
